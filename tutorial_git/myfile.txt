@@ -1,4 +1,8 @@
 メモURL：https://hackmd.io/8fB94UkFRI6LtNt-5l64QQ
 サルでもわかるGitコマンド
 add 変更するをインデックスに登録する
+<<<<<<< HEAD
 cimmit インデックスの状態を記録する
+=======
+pull リモートリポジトリの内容を取得する
+>>>>>>> pullの説明を追加した
