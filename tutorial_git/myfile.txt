@@ -1,3 +1,4 @@
 メモURL：https://hackmd.io/8fB94UkFRI6LtNt-5l64QQ
 サルでもわかるGitコマンド
 add 変更するをインデックスに登録する
+cimmit インデックスの状態を記録する
