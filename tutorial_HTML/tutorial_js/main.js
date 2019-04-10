@@ -19,3 +19,8 @@ function multiply(num1,num2) {
 console.log(multiply(4,7));
 console.log(multiply(20,20));
 console.log(multiply(0.5,3));
+
+//HTMLタグのクリックイベント発生
+document.querySelector('html').onclick = function() {
+    alert('痛っ! つつくのはやめて!');
+}
