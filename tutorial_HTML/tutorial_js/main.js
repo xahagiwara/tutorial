@@ -8,3 +8,14 @@ if (iceCream == 'チョコレート') {
 } else {
   alert('あれれ、でもチョコレートは私のお気に入り......');    
 }
+
+//function 関数名(読み出し変数){}
+function multiply(num1,num2) {
+    var result = num1 * num2;
+    return result;
+  }
+
+//関数名(値);
+console.log(multiply(4,7));
+console.log(multiply(20,20));
+console.log(multiply(0.5,3));
