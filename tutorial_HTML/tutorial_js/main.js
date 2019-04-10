@@ -24,3 +24,18 @@ console.log(multiply(0.5,3));
 document.querySelector('html').onclick = function() {
     alert('痛っ! つつくのはやめて!');
 }
+
+//イメージタグ
+var myImage = document.querySelector('img');
+
+//イメージ画像をクリックされるたびに画像が切り替わる
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'https://www.mozilla.org/media/img/logos/firefox/logo-quantum-high-res.cfd87a8f62ae.png') {
+      myImage.setAttribute ('src','https://cdn0.iconfinder.com/data/icons/jfk/512/chrome-512.png');
+      console.log("true");
+    } else {
+      myImage.setAttribute ('src','https://www.mozilla.org/media/img/logos/firefox/logo-quantum-high-res.cfd87a8f62ae.png');
+      console.log("false");
+    }
+}
