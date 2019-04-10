@@ -39,3 +39,30 @@ myImage.onclick = function() {
       console.log("false");
     }
 }
+
+
+//必要な各DOM要素の読み出し
+var myButton = document.querySelector('button');
+var myHeading = document.querySelector('h1');
+
+//名前を設定する関数の宣言
+function setUserName() {
+    var myName = prompt('あなたの名前を入力してください。');
+    localStorage.setItem('name', myName);
+    myHeading.textContent = 'Mozilla はすばらしいよ、' + myName;
+}
+
+//WebStorage API(LocalStorage)を用いてnameを保存する
+//true : nameが保存されている場合
+//false : nameが保存されていない場合
+if(!localStorage.getItem('name')) {
+    setUserName();
+  } else {
+    var storedName = localStorage.getItem('name');
+    myHeading.textContent = 'Mozilla はすばらしいよ、' + storedName;
+}
+
+//ボタンクリックイベント
+myButton.onclick = function() {
+    setUserName();
+  }
