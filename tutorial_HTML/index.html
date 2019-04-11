@@ -39,7 +39,11 @@
 
     <!--h1タグの名前を変更するためのボタン-->
     <button>ユーザを変更</button>
+  
+    <!--
+      bodyの中じゃないと動作が不定になる
+      ただしheadの中だとh1タグなどがHTMLファイル上にないためJS上でタグの情報が拾えない
+    -->
+    <script src="tutorial_js/main.js" ></script>
   </body>
-
-  <script src="tutorial_js/main.js" ></script>
 </html>
